@@ -33,6 +33,16 @@ convert_to_xlsx(merged_data, output_xlsx_file)
 # Esegui la pulizia dei file
 os.system('python cleanup_files.py')
 
-print('Pulizia dei file completata.')
+# Esegui l'elaborazione del file XLSX
+os.system('python process_xlsx.py')
+
+print('Pulizia dei file e elaborazione del file XLSX completate.')
 
 print('Conversione in XLSX completata. Il file XLSX risultante è:', output_xlsx_file)
+
+
+
+
+
+
+
